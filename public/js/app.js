@@ -5,7 +5,7 @@ var messageError = document.querySelector('#message-fail')
 //fetching weather data
 
 function getWeatherInfo(location) {
-fetch('http://localhost:3000/weather?address=' + location).then((response)=>{
+fetch('/weather?address=' + location).then((response)=>{
     response.json().then((data)=>{
         if(data.error){
             console.log('Error is = ' + data.error)

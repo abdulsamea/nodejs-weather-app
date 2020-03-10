@@ -4,7 +4,7 @@ const hbs = require('hbs')
 const geocode = require('../utils/geocode')
 const forecast = require('../utils/forecast')
 
-const port = 3000
+const port = process.env.port || 3000
 const app = express()
 
 //set path for static files such as index.html

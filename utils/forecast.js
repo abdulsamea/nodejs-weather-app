@@ -14,7 +14,7 @@ const forecast = (latitude, longitude , callback) => {
             }
                       
             else{
-                callback(undefined, data.hourly.summary + ' The temperature is ' + data.currently.temperature + ' degrees, there is ' + data.currently.precipProbability + '%' + ' chance of rain today.')
+                callback(undefined, data.hourly.summary + ' The temperature is ' + data.currently.temperature + ' degrees, there is ' + data.currently.precipProbability + '%' + ' chance of rain today. The humidity level is ' + data.currently.humidity + ', and the windspeed is ' + data.currently.windSpeed + '.')
             }
         })
         .catch(err => callback(err))

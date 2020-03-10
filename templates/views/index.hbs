@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | Get the latest weather info.</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="./css/style.css">
+   
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use my site to know the weather in your area. Go ahead, give it a try!</p>
+
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+        <p id="message-success"></p>
+        <p id="message-fail"></p>
+
+    </div>
+
+    {{>footer}}
+     <script src="/js/app.js"></script>
+</body>
+</html>
